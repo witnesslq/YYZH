@@ -1,0 +1,82 @@
+a{
+	text-decoration: none;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+}
+.login{
+	min-width: 1200px;
+	height: 100%;
+	padding-top: 100px;
+	background-image: url(../images/login-background.png);
+	background-repeat: round;
+	background-size: 100%;
+}
+.login-content{
+	width: 600px;
+	height: 420px;
+	background-color: rgba(255,255,255,0.5);
+	margin: 0px auto;
+	border-radius: 15px;
+}
+.login-tip{
+	width: 202px;
+	margin: 20px auto;
+	padding: 0;
+}
+form{
+	width: 300px;
+	height: 200px;
+	margin: 0 auto;
+	font-size: 16px;
+	color: #666666;
+}
+.inputimg{
+	width: 300px;
+	height: 33px;
+	border: 1px solid #3283cc;
+	margin: 10px 0;
+	background-color: #ffffff;
+	border-radius: 5px;
+}
+.inputimg img{
+	width: 21px;
+	height: 21px;
+	margin: 0 5px -7px 5px;
+}
+input{
+	width: 264px;
+	height: 30px;	
+	border: none;
+	outline:medium;
+}
+input[name=check]{
+	width: 15px;
+	height: 15px;
+}
+form button{
+	width: 180px;
+	height: 40px;
+	border-radius: 15px;
+	margin: 20px 0px 0px 60px;
+	background-color: #92C5D1;
+	border: none;
+	font-size: 26px;
+	color: #ffffff;
+	outline:medium;
+}
+button:hover{
+	background-color: #64c3f2;
+}
+
+.footer{
+	width: 356px;
+	margin: 0px auto;
+	margin-top: 50px;
+	font-size: 17px;
+	color: #ffffff;
+}

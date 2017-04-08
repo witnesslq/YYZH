@@ -1,0 +1,345 @@
+.nav a{
+    color: #ffffff!important;
+}
+.nav a:hover{
+    color: #3892f7!important;
+}
+.header-banner-box{
+    position: relative;
+    width: 100%;
+    height: 1162px;
+    background: #f2f2f2;
+}
+.header{
+    position: absolute;
+    top: 0;
+    left:0;
+    right:0;
+    text-align:center;
+    z-index: 2;
+}
+.banners{
+    position: relative;
+    width: 100%;
+    height:763px;
+    background-repeat: round;
+    background-size: 100% 100%;
+    z-index: 1;
+}
+.banner-1{
+    background-image: url(../images/index/BANNER3.png);
+    background-repeat: round;
+    background-size: 100% 100%;
+}
+.banner-2{
+    background-image: url(../images/index/BANNER3.png);
+    background-repeat: round;
+    background-size: 100% 100%;
+}
+.banner-3{
+    background-image: url(../images/index/BANNER3.png);
+    background-repeat: round;
+    background-size: 100% 100%;
+}
+.flex-control-nav{
+    position: absolute;
+    top: 713px;
+    left:0;
+    right:0;
+    text-align:center;
+    z-index: 2;
+}
+.flex-control-nav li{
+    display: inline-block;
+}
+.flex-control-nav a{
+    margin-right: 26px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    text-indent:-9999px;
+    z-index: 3;
+    cursor: pointer;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 50%;
+}
+.flex-active{
+    background: #3897e9!important;
+}
+.banner-bottom{
+    margin: 0 auto;
+    width: 1224px;
+}
+.banner-bottom li{
+    float: left;
+    position: relative;
+}
+.banner-bottom-li-not-last{
+    margin-right: 22px;
+}
+.banner-bottom-up{
+    width: 284px;
+    height: 13px;
+    background: #3890f3;
+}
+.banner-bottom-img{
+    position: absolute;
+    top: -31px;
+    left:0;
+    right:0;
+    margin: auto;
+    text-align:center;
+    z-index: 2;
+}
+.banner-bottom-down{
+    padding-top: 31px;
+    width: 284px;
+    height: 251px;
+    background: #ffffff;
+}
+.banner-bottom-down-p-1{
+    font-family: "Microsoft YaHei";
+    font-size: 20px;
+    color: #333333;
+    line-height: 60px;
+}
+.banner-bottom-down-p-2{
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    color: #999999;
+    line-height: 26px;
+}
+.banner-bottom-down img{
+    margin-top: 14px;
+}
+.About-Yi-Yang-Zhong{
+    padding: 56px 0;
+    width: 100%;
+    height: 608px;
+    background: url(../images/index/About-Yi-Yang-Zhong.png);
+    background-repeat: round;
+    background-size: 100% 100%;
+}
+.relative{
+    position: relative;
+}
+.About-Yi-Yang-Zhong-title-absolute{
+    position: absolute;
+    top: 25px;
+    left: 0;
+    right: 160px;
+    margin: auto;
+    text-align:center;
+    z-index: 2;
+}
+.title-2{
+    font-family: SSZH;
+    font-size: 24px;
+    color: #549ff5;
+}
+.title-2-gray{
+    font-family: SSZH;
+    font-size: 24px;
+    color: #666666;
+}
+.title-3{
+    font-family: "Microsoft YaHei";
+    font-size: 16px;
+    color: #549ff5;
+    line-height: 30px;
+}
+.title-3-gray{
+    font-family: "Microsoft YaHei";
+    font-size: 16px;
+    color: #666666;
+    line-height: 30px;
+}
+.subtitle-2{
+    font-family: SSZH;
+    font-size: 34px;
+    color: #549ff5;
+    line-height: 80px;
+}
+.About-Yi-Yang-Zhong-p{
+    font-family: "Microsoft YaHei";
+    font-size: 16px;
+    color: #333333;
+    line-height: 34px;
+}
+.About-Yi-Yang-Zhong-img{
+    margin: 40px auto;
+}
+.client{
+    padding: 56px 0;
+    width: 100%;
+    height: 608px;
+    background: url(../images/index/client.png);
+    background-repeat: round;
+    background-size: 100% 100%;
+}
+.client-p{
+    font-family: SSZH;
+    font-size: 34px;
+    color: #ffffff;
+    line-height: 80px;
+}
+.client-show-all{
+    margin: 44px auto;
+    width: 1184px;
+}
+.client li{
+    float: left;
+}
+.client-show-img-not-last{
+    margin-right: 24px;
+}
+.follow-heart{
+    padding: 56px 0;
+    width: 100%;
+    height: 669px;
+    background: url(../images/index/follow-heart.png);
+    background-repeat: round;
+    background-size: 100% 100%;
+}
+.follow-heart-title-absolute{
+    position: absolute;
+    top: 25px;
+    left: 0;
+    right: 480px;
+    margin: auto;
+    text-align:center;
+    z-index: 2;
+}
+.title-4{
+    font-family: SSZH;
+    font-size: 30px;
+    color: #333333;
+}
+.title-4-blue{
+    font-family: SSZH;
+    font-size: 30px;
+    color: #549ff5;
+}
+.title-5{
+    font-family: SSZH;
+    font-size: 24px;
+    color: #333333;
+    line-height: 60px;
+}
+.title-5-blue{
+    font-family: SSZH;
+    font-size: 24px;
+    color: #549ff5;
+    line-height: 60px;
+}
+.follow-heart-ul{
+    margin: 60px auto;
+    width: 1190px;
+}
+.follow-heart-ul li{
+    position: relative;
+    float: left;
+}
+.follow-heart-ul-li-not-last{
+    margin-right: 40px;
+}
+.follow-heart-ul img{
+    box-shadow: 0 0 10px #c5c5c5;
+    cursor: url('E:/公司网站/images/point.ico'),auto;
+}
+.follow-heart-text{
+    padding: 25px;
+    position: absolute;
+    top: 222px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align:center;
+    z-index: 2;
+    width: 284px;
+    height: 232px;
+    background: #ffffff;
+}
+.follow-heart-text-p-1{
+    font-family: SSZH;
+    font-size: 18px;
+    color: #333333;
+    line-height: 30px;
+}
+.follow-heart-text-p-2{
+    margin-bottom: 10px;
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    color: #333333;
+    line-height: 26px;
+}
+.follow-heart-text-p-3 {
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    color: #666666;
+    line-height: 26px;
+    text-align: left;
+}
+.definition-of-quality-life{
+    padding: 56px 0;
+}
+.definition-of-quality-life-absolute{
+    position: absolute;
+    top: 25px;
+    left: 0;
+    right: 446px;
+    margin: auto;
+    text-align:center;
+    z-index: 2;
+}
+.definition-of-quality-life-div{
+    margin: 40px 0 100px 0;
+    width: 100%;
+    height: 244px;
+    overflow: visible;
+    position: relative;
+}
+.definition-of-quality-life-ul{
+    width: 10000px;
+    position: absolute;
+}
+.definition-of-quality-life-ul>li{
+    float: left;
+    display: inline-block;
+    vertical-align: middle;
+    width: 336px;
+    height: 244px;
+}
+.definition-of-quality-life-ul>li>img{
+    width: 100%;
+    height: 100%;
+}
+.definition-of-quality-life-p{
+    font-family: "Microsoft YaHei";
+    font-size: 18px;
+    color: #333333;
+    line-height: 26px;
+}
+.definition-of-quality-life-text{
+    margin: 60px auto 100px auto;
+}
+.definition-of-quality-life-text input{
+    vertical-align:middle;
+    padding: 0 32px;
+    width: 644px;
+    height: 52px;
+    border: 1px solid #cccccc;
+    font-family: "Microsoft YaHei";
+    font-size: 16px;
+}
+.definition-of-quality-life-text button{
+    vertical-align:middle;
+    width: 250px;
+    height: 54px;
+    background: #549ff5;
+    border: none;
+    font-family: "Microsoft YaHei";
+    font-size: 18px;
+    color: #ffffff;
+}

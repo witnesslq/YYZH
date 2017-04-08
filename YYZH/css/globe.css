@@ -1,0 +1,231 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+}
+body {
+	font-family: "Microsoft YaHei", "sans-serif" !important;
+	background: #fff;
+	text-align: center;
+	font-size: 0;
+	vertical-align: middle;
+	width: 100%;
+}
+em {
+	font-style: normal;
+}
+li {
+	list-style: none;
+}
+img {
+	border: 0;
+}
+p, span, li, a {
+	word-wrap: break-word;
+	cursor: default;
+	color: #333;
+	font-size: 16px;
+}
+a {
+	color: #fff;
+	text-decoration: none !important;
+	cursor: pointer;
+}
+.phidden {
+	font-size: 10px;
+	text-indent: -9999px;
+}
+.clearfix:after {
+	clear: both;
+	display: block;
+	content: "";
+}
+.clearfix {
+	zoom: 1;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.box{
+	width: 1200px;
+	margin: 0 auto;
+}
+@font-face {
+  font-family: 'FZLT';
+  src: url('../font/FZLT.eot');
+  src:
+    url('../font/FZLT.eot?#font-spider') format('embedded-opentype'),
+    url('../font/FZLT.woff') format('woff'),
+    url('../font/FZLT.ttf') format('truetype'),
+    url('../font/FZLT.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'hiragino';
+  src: url('../font/hiragino.eot');
+  src:
+    url('../font/hiragino.eot?#font-spider') format('embedded-opentype'),
+    url('../font/hiragino.woff') format('woff'),
+    url('../font/hiragino.ttf') format('truetype'),
+    url('../font/hiragino.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SSZH';
+  src: url('../font/SSZH.eot');
+  src:
+    url('../font/SSZH.eot?#font-spider') format('embedded-opentype'),
+    url('../font/SSZH.woff') format('woff'),
+    url('../font/SSZH.ttf') format('truetype'),
+    url('../font/SSZH.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Bickley';
+  src: url('../font/Bickley.eot');
+  src:
+    url('../font/Bickley.eot?#font-spider') format('embedded-opentype'),
+    url('../font/Bickley.woff') format('woff'),
+    url('../font/Bickley.ttf') format('truetype'),
+    url('../font/Bickley.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'arial';
+  src: url('../font/arial.eot');
+  src:
+    url('../font/arial.eot?#font-spider') format('embedded-opentype'),
+    url('../font/arial.woff') format('woff'),
+    url('../font/arial.ttf') format('truetype'),
+    url('../font/arial.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* ---------------------- */
+.header-logo{
+	width: 274px;
+	height: 50px;
+	margin: 30px 0;
+}
+.nav>li{
+	width: 74px;
+	height: 38px;
+	margin: 0 30px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.nav>li *{
+	transition: all .3s;
+	-moz-transition: all .3s;	/* Firefox 4 */
+	-webkit-transition: all .3s;	/* Safari 和 Chrome */
+	-o-transition: all .3s;	/* Opera */
+}
+.nav>li>a{
+	color: #333;
+	font-size:18px;
+	padding: 8px 16px;
+	line-height: 108px;
+	border: solid 1px #fff;
+}
+.nav>li>a:hover{
+	color: #3892f7;
+	font-size:18px;
+	border: solid 1px #3892f7;
+	border-radius:20px;
+}
+ul.nav.index-nav>li>a{
+	border: solid 1px transparent;
+}
+.title{
+	font-family: 'SSZH';
+	font-size:30px;
+	color: #333;
+}
+.subtitle{
+	font-size: 16px;
+	color: #666;
+}
+.slider{
+	margin: 10px 0;
+}
+.slider>*{
+	display: inline-block;
+	vertical-align: middle;
+}
+.line{
+	width: 100px;
+	height: 1px;
+	background-color: #3892f7;
+}
+.point{
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: #3892f7;
+	margin: 0 20px;
+}
+.footer{
+	height: 420px;
+	background: url(../images/footer_bg.png) repeat;
+	position: relative;
+}
+.footer>.box{
+	display: table;
+	padding: 50px 0;
+}
+.footer>.box>*{
+	width: 599px;
+	height: 218px;
+	display: table-cell;
+	vertical-align: middle;
+}
+.footer>.box>.footer-slider{
+	width: 2px;
+	background-image: url(../images/footer-slider.png);
+	background-repeat: repeat-y;
+}
+.footer-info{
+	text-align: left;
+	padding-left:110px;
+}
+.footer-info>li{
+}
+.footer-info>.footer-info-title{
+	font-size: 20px;
+	color: #999;
+}
+.footer-info>li>*{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 14px;
+	line-height: 40px;
+	color: #999;
+}
+.footer-info>li>img{
+	width: 14px;
+	height: 14px;
+}
+.trademark{
+	height: 102px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #181818;
+}
+.trademark>p{
+	font-size: 20px;
+	line-height: 102px;
+	color: #666;
+}

@@ -1,0 +1,150 @@
+.banner>div{
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+.banner>div>img{
+	width: 100%;
+}
+.banner>div>div{
+	position: absolute;
+	top:25%;
+	left: 50%;
+	z-index: 999;
+	text-align: left;
+}
+.banner>div>div>p{
+	font-size:30px;
+	color: #fafcff;
+	font-family: 'hiragino';
+}
+.banner>div>div>.banner-1{
+	font-size:50px;
+	font-family:'FZLT';
+}
+/* ----------------------- */
+.main{
+	margin-top:50px;
+}
+/* ----------------------- */
+.main-nav{
+	margin: 40px 0;
+	margin-left: 20px;
+	text-align: left;
+}
+.main-nav>li{
+	width: 90px;
+	height: 32px;
+	margin-right:40px;
+	border-radius: 16px;
+	border: solid 1px #ccc;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+}
+.main-nav>li>p{
+	font-size:16px;
+	line-height: 32px;
+	color: #666;
+	cursor: pointer;
+}
+.main-nav *{
+	transition: all .3s;
+	-moz-transition: all .3s;	/* Firefox 4 */
+	-webkit-transition: all .3s;	/* Safari 和 Chrome */
+	-o-transition: all .3s;	/* Opera */
+}
+.main-nav>li:hover{
+	background-color: #3892f7;
+	border: solid 1px #3892f7;
+}
+.main-nav>li:hover>p{
+	color: #fff;
+}
+.main-nav>.active{
+	background-color: #3892f7;
+	border: solid 1px #3892f7;
+}
+.main-nav>li.active>p{
+	color: #fff;
+}
+.simple>li p{
+	font-size: 18px;
+	color: #333;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 20px;
+	width: 100%;
+}
+.simple>li img{
+	width: 260px;
+	height: 215px;
+	position: absolute;
+	left: 20px;
+	right: 20px;
+	top: 40px;
+}
+.simple>li{
+	width: 260px;
+	height: 243px;
+	display: inline-block;
+	padding:40px 20px;
+	position: relative;
+}
+.simple>li:hover img{
+	transition: transform .3s;
+	-moz-transition: transform .3s;	/* Firefox 4 */
+	-webkit-transition: transform .3s;	/* Safari 和 Chrome */
+	-o-transition: transform .3s;	/* Opera */
+    -webkit-transform:scale(1.05,1.05);
+    -moz-transform:scale(1.05,1.05);
+    -transform:scale(1.05,1.05);
+	border: solid 1px #587efd;
+	box-shadow:5px 5px 13px #807d7d;
+}
+.page{
+	margin: 30px 0;
+}
+.page>*{
+	display: inline-block;
+}
+button{
+	background-color: #fff;
+	border: none;
+	cursor: pointer;
+	font-size: 18px;
+	color: #333;
+}
+.page>p,.page>input,.page>button{
+	margin: 0 9px;
+}
+.prev,.next{
+	border: solid 1px #a6a6a6;
+	color: #a6a6a6;
+	font-size:18px;
+}
+button.num:hover{
+	color: #3892f7;
+}
+button.num.active{
+	color: #3892f7;
+}
+.page>p,.page>p>span{
+	font-size: 14px;
+	color: #999;
+}
+.page>input[type='text']{
+	width:50px;
+	font-size: 14px;
+	color: #999;
+	text-align: center;
+}
+.page>input[type='submit']{
+	background: #3892f7;
+	border: none;
+	font-size: 14px;
+	color: #fff;
+	padding: 2px 6px;
+	cursor: pointer;
+}

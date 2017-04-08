@@ -1,0 +1,59 @@
+.banner{
+    width: 100%;
+    position: relative;
+    margin-bottom:60px;
+}
+.banner>img{
+    width: 100%;
+}
+.banner-p{
+    position: absolute;
+    left: 20%;
+    top: 25%;
+    text-align: left;
+}
+.banner-p p{
+    color: #fff;
+}
+.banner-p-1{
+    font-family: 'SSZH';
+    font-size: 50px;
+    line-height: 100px;
+}
+.banner-p-2{
+    font-family: 'hiragino';
+    font-size: 30px;
+    line-height: 60px;
+}
+.banner-p-3{
+    font-family: 'hiragino';
+    font-size: 30px;
+}
+.job{
+    margin: 50px auto;
+    width: 1200px;
+}
+.job-one-side{
+    float: left;
+    width: 550px;
+    font-size: 16px;
+    text-align: left;
+}
+.job-one-side:first-child{
+    margin-right: 100px;
+}
+.job-one-side-p1{
+    font-family: "Microsoft YaHei";
+    line-height: 60px;
+    color: #666666;
+}
+.job-one-side-p2{
+    font-family: "Microsoft YaHei";
+    line-height: 32px;
+    color: #666666;
+}
+.job-one-side-p3{
+    font-family: "Microsoft YaHei";
+    line-height: 100px;
+    color: #333333;
+}

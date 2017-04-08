@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cqupt.dao.CaseMapper" >
+  <resultMap id="BaseResultMap" type="cqupt.domain.Case" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="icon" property="icon" jdbcType="VARCHAR" />
+    <result column="class" property="class" jdbcType="INTEGER" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, name, icon, class
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from `case`
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  
+  <select id="selectCaseByPage" resultType="cqupt.domain.Case" parameterType="int">
+  	select * from `case` limit #{page},12
+  </select>
+  
+  <delete id="delete"  parameterType="int">
+  delete  from `case` where id=#{id}
+  </delete>
+  
+  <select id="selectAllCaseName" resultType="java.lang.String" >
+  	select title from `case` 
+  </select>
+  
+   <select id="selectSbContentById" resultType="java.lang.String" parameterType="java.lang.Integer" >
+  	select sbcontent from `case` where id=#{id}
+  </select>
+  
+  
+  <select id="selectCaseInfo" resultType="cqupt.domain.Case" parameterType="java.lang.String">
+  	select id,time,username from `case` where title=#{title,jdbcType=VARCHAR}
+  </select>
+  
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from `case`
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="cqupt.domain.Case" >
+    insert into `case` (content,caseclass,username,time,title)
+    values (#{content}, #{caseclass,jdbcType=INTEGER}, #{username,jdbcType=VARCHAR},
+    #{time,jdbcType=VARCHAR},#{title,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="cqupt.domain.Case" >
+    insert into `case`
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="name != null" >
+        name,
+      </if>
+      <if test="icon != null" >
+        icon,
+      </if>
+      <if test="class != null" >
+        class,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="name != null" >
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="icon != null" >
+        #{icon,jdbcType=VARCHAR},
+      </if>
+      <if test="class != null" >
+        #{class,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="update" parameterType="cqupt.domain.Case" >
+    update `case`
+    <set >
+      <if test="username != null" >
+        username = #{username,jdbcType=VARCHAR},
+      </if>
+      <if test="caseclass != null" >
+        caseclass = #{caseclass,jdbcType=INTEGER},
+      </if>
+      <if test="content != null" >
+        content = #{content,jdbcType=VARCHAR},
+      </if>
+      <if test="sbcontent != null" >
+        sbcontent = #{sbcontent,jdbcType=VARCHAR},
+      </if>
+      <if test="time != null" >
+        time = #{time,jdbcType=VARCHAR},
+      </if>	
+      <if test="title != null" >
+        title = #{title,jdbcType=VARCHAR},
+      </if>
+       <if test="url != null" >
+        url = #{url,jdbcType=VARCHAR}
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="cqupt.domain.Case" >
+    update `case`
+    set name = #{name,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      class = #{class,jdbcType=INTEGER}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

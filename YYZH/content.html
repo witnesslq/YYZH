@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>管理中心</title>
+    <link rel="stylesheet" type="text/css" href="css/content.css">
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/content-case.js"></script>
+    <script type="text/javascript" src="js/content-news.js"></script>
+    <script type="text/javascript" src="js/content-manager.js"></script>
+</head>
+
+<body>
+    <div class="left">
+        <div class="left-log">
+            <img src="images/tip_03.png">
+        </div>
+        <div class="left-user">
+            <img src="images/user-photo_03.png">
+            <p>管理者:<span>雷和超</span></p>
+        </div>
+        <div class="left-function left-function1">
+            <div class="left-func1">文章上传</div>
+            <p><a href="javascript:void(0)">产品页</a></p>
+            <p><a href="javascript:void(0)">新闻页</a></p>
+  </div>
+  <div class="left-function left-function2">
+    <div class="left-func2">用户管理</div>
+    <p><a href="javascript:void(0)">用户信息</a></p>
+            <p><a href="javascript:void(0)">登出</a></p>
+        </div>
+    </div>
+    <div class="right">
+        <div class="hint">
+            <p>易扬众合科技公司后台管理中心</p>
+        </div>
+        <!-- 显示内容详情 -->
+        <div class="right-content">
+            <div class="right-add">
+                <p>添加文章<span><a href="javascript:void(0)">添加</a></span></p>
+            </div>
+            <div class="right-subpage">
+                <div class="right-content-left">
+                    <ul>
+                       
+                    </ul>
+                </div>
+                <div class="right-content-right">
+                    <div class="right-content-tip">
+                        <h4>标题</h4>
+                        <p>上传者</p>
+                        <p>上传时间</p>
+                        <h4>删除文章</h4>
+                    </div>
+                    <div class="content-delete">
+                        <p class="delete1">是否删除这篇文章?</p>
+                        <p class="delete2"><a href="javascript:void(0)">yes</a></p>
+                        <p class="delete3"><a href="javascript:void(0)">no</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 显示上传产品类case功能 -->
+        <div class="right-case-fileup">
+        <div class="case-form1-first">
+            <form class="case-form1-title">
+            <h4>简洁页</h4>
+                <p>输入标题
+                    <input type="text" name="" value="" maxlength="15" placeholder="建议在15个字内">
+                </p>
+            </form>
+            <form enctype="multipart/form-data" name="picture" class="case-form1-file">
+              <p>上传图片
+                    <input type="file" name="picture" class="form1-file"value="">
+                </p>
+                <button type="button">上传</button>
+            </form>
+          </div>
+          <div class="case-form2-second">
+            <form enctype="multipart/form-data" class="case-form2-file1">
+            <h4>详情页</h4>
+              <p>上传首页大图
+                    <input type="file" name="picture" class="form2-file1"value="">
+                </p>
+            </form>
+            <form enctype="multipart/form-data"  class="case-form2-file2">
+                <p>上传成品图片
+                    <input type="file" name="picture" class="form2-file2"value="" multiple="">
+                </p>
+            </form>
+            <form class="case-form2-content">
+                <p>输入标题
+                    <input type="text" name="title" value="" maxlength="15" placeholder="建议在15个字内">
+                </p>
+                <p>输入副标题
+                    <input type="text" name="sbtitle" value="" maxlength="15" placeholder="建议在15个字内">
+                </p>
+                <p>输入价格
+                    <input type="text" name="price" value="" placeholder="例如：3000元">
+                </p>
+                <p>输入工期
+                    <input type="text" name="time" value="" placeholder="例如：15天">
+                </p>
+                <p>输入满意度
+                    <input type="text" name="degree" value="" placeholder="（1.0-5.0分）例如：3.0分">
+                </p>  
+                <p>输入地址
+                    <input type="text" name="pos" value="" maxlength="20" placeholder="建议在20个字内">
+                </p>
+                <p>输入描述
+                    <textarea name="plate" value=""  placeholder="请描述该产品的特色及背景"></textarea>
+                </p>
+                <button type="button">上传</button>
+            </form>
+          </div>
+        </div>
+
+
+        <!-- 显示上传新闻类news功能 -->
+        <div class="right-news-fileup">
+        <div class="case-news1-first">
+            <form class="case-form1-option" >
+            <h4>简洁页</h4>
+                <p>新闻分类
+                    <select id="selectID">
+                        <option value="1">主新闻</option>
+                        <option value="0">副新闻</option>
+                    </select>
+                </p>
+            </form>
+
+             <form enctype="multipart/form-data" name="picture" class="case-news1-file1">
+              <p>上传图片
+                    <input type="file" name="picture" class="news1-file"value="">
+                </p>
+            </form>
+            <form enctype="multipart/form-data" class="case-news1-file2">
+              <p>上传图片(小)
+                    <input type="file" name="small" class="news1-file"value="">
+                </p>
+                <p>上传图片(大)
+                    <input type="file" name="big" class="news1-file"value="">
+                </p>
+            </form>
+
+            <form class="case-news1-title">
+                <p>输入标题
+                    <input type="text" name="title" maxlength="20" value="" placeholder="建议在20个字内">
+                </p>
+
+                <p>输入概要
+                    <textarea name="about" value="" maxlength="100" placeholder="建议在100字以内"></textarea>
+                </p>
+                <button type="button">上传</button>
+            </form>
+           
+          </div>
+          <div class="case-news2-second">
+            <form enctype="multipart/form-data" class="case-news2-file">
+            <h4>详情页</h4>
+              <p>上传图片
+                    <input type="file" name="picture" class="news2-file1" value="">
+                </p>
+            </form>
+            <form class="case-news2-content">
+              <p>输入文章      
+              </p>
+              <textarea name="plate" value="" placeholder="若需要在文章中插入图片请点击上传图片"></textarea>
+                <button type="button">上传</button>
+            </form>
+          </div>
+        </div>
+        <!-- 显示添加/删除用户信息类功能 -->
+        <div class="right-manager">
+            <div class="table-message">
+                <table>
+                    <tr>
+                        <th>用户名</th>
+                        <th>职位</th>
+                        <th>删除用户</th>
+                    </tr>
+                    <tr>
+                        <td>12345789</td>
+                        <td>UI设计</td>
+                        <td class="table-delete"><a href="javascript:void(0)">删除</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="table-add">
+                <a href="javascript:void(0)">添加用户</a>
+            </div>
+            <!-- 添加用户弹出框 -->
+            <div class="user-add">
+                <form>
+                    <ul>
+                        <li><img src="images/permission-name_03.png"><span>用户名</span>
+                            <input class="user-add-name" type="text" name="1" value="">
+                        </li>
+                        <li><img src="images/permission-pass_03.png"><span>密码</span>
+                            <input class="user-add-pass" type="text" name="2" value="">
+                        </li>
+                        <li><img src="images/permission-type_03.png"><span>职位</span>
+                            <input class="user-add-type" type="text" name="3" value="">
+                        </li>
+                        <li><a href="javascript:void(0)" class="user-add-sure">确认</a><a href="javascript:void(0)" class="user-add-cancel">取消</a></li>
+                    </ul>
+                </form>
+            </div>
+            <!-- 删除用户信息弹出框 -->
+            <div class="table-suredelete">
+                <div class="user-delete">
+                    <p class="user-delete1">是否删除该用户?</p>
+                    <p class="user-delete2"><a href="javascript:void(0)">yes</a></p>
+                    <p class="user-delete3"><a href="javascript:void(0)">no</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

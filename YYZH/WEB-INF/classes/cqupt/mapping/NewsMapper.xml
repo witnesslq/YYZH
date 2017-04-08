@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cqupt.dao.NewsMapper" >
+  <resultMap id="BaseResultMap" type="cqupt.domain.News" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="sign" property="sign" jdbcType="INTEGER" />
+    <result column="title" property="title" jdbcType="VARCHAR" />
+    <result column="time" property="time" jdbcType="VARCHAR" />
+    <result column="synopsis" property="synopsis" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, sign, title, time, synopsis
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from news
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectNewsFirst" resultType="cqupt.domain.News">
+  select * from news limit 0,8
+  </select>
+  
+   <select id="selectNewsMore" resultType="cqupt.domain.News" parameterType="int">
+  select * from news limit #{page},4
+  </select>
+  
+   <select id="selectSbContentById" resultType="java.lang.String" parameterType="java.lang.Integer">
+  select sbcontent from news where id=#{id}
+  </select>
+  
+  <select id="selectAllNewsName" resultType="java.lang.String">
+  select title from news 
+  </select>
+  
+  <select id="selectNewsById" parameterType="java.lang.Integer" resultType="cqupt.domain.News">
+  select *  from news where id =#{id}
+  </select>
+  
+  <select id="selectNewsInfo" resultType="cqupt.domain.News" parameterType="java.lang.String">
+  select id,username,time from news  where title=#{title,jdbcType=VARCHAR}
+  </select>
+  
+  <delete id="delete" parameterType="java.lang.Integer" >
+    delete from news
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from news
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="cqupt.domain.News" >
+    insert into news (sign, title, 
+      time, content,sbcontent,username,url)
+    values (#{sign,jdbcType=INTEGER}, #{title,jdbcType=VARCHAR}, 
+      #{time,jdbcType=VARCHAR}, #{content,jdbcType=VARCHAR}, #{sbcontent,jdbcType=VARCHAR}, 
+      #{username,jdbcType=VARCHAR}, #{url,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="cqupt.domain.News" >
+    insert into news
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="sign != null" >
+        sign,
+      </if>
+      <if test="title != null" >
+        title,
+      </if>
+      <if test="time != null" >
+        time,
+      </if>
+      <if test="synopsis != null" >
+        synopsis,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="sign != null" >
+        #{sign,jdbcType=INTEGER},
+      </if>
+      <if test="title != null" >
+        #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="time != null" >
+        #{time,jdbcType=VARCHAR},
+      </if>
+      <if test="synopsis != null" >
+        #{synopsis,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  
+   <update id="update" parameterType="cqupt.domain.News" >
+    update news
+    <set >
+      <if test="username != null" >
+        username = #{username,jdbcType=VARCHAR},
+      </if>
+      <if test="sign != null" >
+        sign = #{sign,jdbcType=INTEGER},
+      </if>
+      <if test="content != null" >
+        content = #{content,jdbcType=VARCHAR},
+      </if>
+      <if test="sbcontent != null" >
+        sbcontent = #{sbcontent,jdbcType=VARCHAR},
+      </if>
+      <if test="time != null" >
+        time = #{time,jdbcType=VARCHAR},
+      </if>	
+      <if test="title != null" >
+        title = #{title,jdbcType=VARCHAR},
+      </if>
+       <if test="url != null" >
+        url = #{url,jdbcType=VARCHAR}
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  
+  <update id="updateByPrimaryKeySelective" parameterType="cqupt.domain.News" >
+    update news
+    <set >
+      <if test="sign != null" >
+        sign = #{sign,jdbcType=INTEGER},
+      </if>
+      <if test="title != null" >
+        title = #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="time != null" >
+        time = #{time,jdbcType=VARCHAR},
+      </if>
+      <if test="synopsis != null" >
+        synopsis = #{synopsis,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="cqupt.domain.News" >
+    update news
+    set sign = #{sign,jdbcType=INTEGER},
+      title = #{title,jdbcType=VARCHAR},
+      time = #{time,jdbcType=VARCHAR},
+      synopsis = #{synopsis,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>
